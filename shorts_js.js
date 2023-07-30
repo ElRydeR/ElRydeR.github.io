@@ -40,12 +40,6 @@ document.getElementById("colonias").addEventListener("click", function() {
 document.getElementById("carteras").addEventListener("click", function() {
   	window.location.href = "carteras.html";
   });
-document.getElementById("aretes").addEventListener("click", function() {
-  	window.location.href = "aretes.html";
-  });
-document.getElementById("audifonos").addEventListener("click", function() {
-  	window.location.href = "audifonos.html";
-  });
 document.getElementById("pomos").addEventListener("click", function() {
   	window.location.href = "pomos.html";
   });
@@ -55,3 +49,10 @@ document.getElementById("zapatos").addEventListener("click", function() {
   document.getElementById("vestidos").addEventListener("click", function() {
     	window.location.href = "vestidos.html";
   });  
+document.getElementById("aretes").addEventListener("click", function() {
+  	window.location.href = "aretes.html";
+  });
+document.getElementById("audifonos").addEventListener("click", function() {
+  	window.location.href = "audifonos.html";
+  });
+
