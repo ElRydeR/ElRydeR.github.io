@@ -43,9 +43,6 @@ document.getElementById("carteras").addEventListener("click", function() {
 document.getElementById("aretes").addEventListener("click", function() {
   window.location.href = "aretes.html";
   });
-document.getElementById("calzoncillos").addEventListener("click", function() {
-  window.location.href = "calzoncillos.html";
-  });
 document.getElementById("audifonos").addEventListener("click", function() {
   window.location.href = "audifonos.html";
   });
