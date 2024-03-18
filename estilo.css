@@ -1,0 +1,422 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    height: 70px; /* Altura predeterminada del encabezado */
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ffffff; /* Color de fondo del encabezado */
+}
+
+.logo-container {
+    flex: 1; /* Toma el espacio disponible */
+    text-align: left; /* Alinea el logo a la izquierda */
+    height: 100%;
+}
+
+.logo-container img {
+    max-height: 100%; /* Ajusta la altura del logo al 100% del encabezado */
+    max-width: 100%; /* Ajusta el ancho del logo al 100% del encabezado */
+    animation: pulse 4s ease-in-out infinite alternate; /* Animación de agrandamiento y encojimiento */
+}
+
+.social-icons {
+    flex: 1; /* Toma el espacio disponible */
+    text-align: right; /* Alinea los íconos a la derecha */
+}
+
+.social-icons a {
+    margin-left: 20px; /* Espaciado entre los íconos */
+}
+
+.social-icons img {
+    width: 30px; /* Tamaño de los íconos */
+    height: auto;
+}
+
+/* Efecto hover */
+.social-icons img:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño al hacer hover */
+}
+
+main {
+    padding: 20px;
+    background-color: #ffffff; /* Color de fondo del encabezado */
+}
+
+.add-ons {
+    margin-top: 10px; /* Espacio superior */
+}
+
+.addons h4 {
+    font-weight: bold; /* Estilo del título */
+}
+
+.addon {
+    display: flex; /* Para alinear el contenido */
+    justify-content: space-between; /* Para separar el nombre del precio */
+}
+
+.addon-price {
+    color: #888; /* Color del precio del agregado */
+}
+
+.menu-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para los enunciados de sección */
+.menu-section h2 {
+    font-style: italic; /* Inclinación del texto */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+
+.item {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.item img {
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.7);
+}
+
+.item-details {
+    margin-top: 10px;
+}
+
+.item-details h3 {
+    margin-bottom: 5px;
+}
+
+.item-details p {
+    margin: 5px 0;
+}
+/* Estilos para la barra de navegación */
+nav {
+    text-align: center;
+    padding: 5px 0;
+    background-color: #333; /* Cambia el color de fondo según lo desees */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ccc;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+    z-index: -1; /* Coloca la capa detrás del contenido */
+}
+
+/* Estilos para el botón "Añadir a pedido" */
+.add-to-cart-btn{
+    background-color: #3a851d; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    margin-bottom: 10px;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.add-without-addons-btn {
+    background-color: #3a851d; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    margin-bottom: 10px;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    display: none;
+}
+
+.add-without-addons-btn:hover {
+    background-color: #2c6415; /* Color de fondo verde oscuro al pasar el mouse */
+}
+
+.add-to-cart-btn:hover {
+    background-color: #2c6415; /* Color de fondo verde oscuro al pasar el mouse */
+}
+
+.quantity-btn-less {
+    background-color: #c01b1b; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    margin-bottom: 10px;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.quantity-btn-less:hover {
+    background-color: #971717;
+}
+
+.add-to-cart{
+    background-color: #3a851d; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    margin-bottom: 10px;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.add-to-cart:hover {
+    background-color: #2c6415; /* Color de fondo verde oscuro al pasar el mouse */
+}
+
+.quantity-btn {
+    background-color: #c01b1b; /* Color de fondo verde */
+    color: white; /* Color del texto blanco */
+    padding: 8px 16px; /* Espaciado interno del botón */
+    margin-bottom: 10px;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+.quantity-btn:hover {
+    background-color: #971717;
+}
+
+.cart-icon img {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cart-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    overflow-y: auto;
+}
+
+.cart-menu.show {
+    transform: translateX(0);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.close-btn {
+    cursor: pointer;
+}
+
+.cart-items {
+    margin-bottom: 10px;
+    max-height: calc(100% - 50px);
+    overflow-y: auto;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.cart-item-name {
+    font-weight: bold;
+}
+
+.cart-item-price {
+    float: right;
+    color: #888;
+}
+
+#totalContainer {
+    background-color: #fff;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+}
+
+#pedido {
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    color: blue;
+}
+
+.carritoslogan {
+    font-weight: bold; /* Estilo del título */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+/* Estilos para el botón circular */
+#scrollToTopBtn {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Fijar el botón en la pantalla */
+    bottom: 20px; /* Distancia desde la parte inferior */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    width: 40px; /* Ancho del botón */
+    height: 40px; /* Altura del botón */
+    background-color: #333; /* Color de fondo del botón */
+    border-radius: 50%; /* Hacer el botón circular */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    z-index: 1000; /* Asegurarse de que esté encima de otros elementos */
+}
+
+#scrollToTopBtn::after {
+    content: '\25B2'; /* Carácter de flecha hacia arriba */
+    font-size: 24px; /* Tamaño de la flecha */
+    color: #fff; /* Color del texto */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Posición vertical centrada */
+    left: 50%; /* Posición horizontal centrada */
+    transform: translate(-50%, -50%); /* Centrar la flecha */
+}
+
+/* Estilos para el footer */
+footer {
+    background-color: #333; /* Color de fondo gris */
+    color: #fff; /* Color de texto blanco */
+    padding: 2px;
+    text-align: center; /* Alineación central del texto */
+}
+
+.footer-content {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrar el contenido horizontalmente */
+}
+
+.pulse-animation {
+    animation: pulseAnimation 0.3s ease-in-out;
+}
+
+.blink-animation {
+    animation: blink 0.3s ease-in-out;
+}
+
+@keyframes pulseAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(1); /* Tamaño inicial del logo */
+    }
+    to {
+        transform: scale(1.5); /* Tamaño máximo del logo */
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 30px #0f0, 0 0 40px #0f0, 0 0 50px #0f0, 0 0 60px #0f0, 0 0 70px #0f0, 0 0 80px #0f0;
+    }
+    to {
+        box-shadow: 0 0 20px #0f0, 0 0 40px #0f0, 0 0 60px #0f0, 0 0 80px #0f0, 0 0 100px #0f0, 0 0 120px #0f0, 0 0 140px #0f0, 0 0 160px #0f0;
+    }
+}
+
+/* Cuando la pantalla es más grande, mostrar los platos en 2 columnas */
+@media (min-width: 768px) {
+    .item {
+        width: calc(50% - 20px); /* Ancho del 50% con espacio entre platos */
+    }
+}
+
+/* Cuando la pantalla es aún más grande, mostrar los platos en 3 columnas */
+@media (min-width: 1024px) {
+    .item {
+        width: calc(33.33% - 20px); /* Ancho del 33.33% con espacio entre platos */
+    }
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 767px) {
+    .cart-menu {
+        width: 50%; /* Ancho reducido para dispositivos móviles */
+    }
+    .cart-items .cart-item {
+        font-size: 12px; /* Tamaño de fuente reducido para dispositivos móviles */
+    }
+    #totalContainer {
+        font-size: 12px; /* Tamaño de fuente reducido para dispositivos móviles */
+    }
+}

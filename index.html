@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <header>
+        <div class="logo-container">
+            <img src="Logos/logo.webp" alt="Logo del restaurante">
+        </div>
+        <div id="cartIcon" class="cart-icon">
+            <img src="Logos/domicilio3.webp" alt="Carrito">
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="Logos/instalogo.png" alt="Instagram"></a>
+            <a href="#"><img src="Logos/wslogo.png" alt="WhatsApp"></a>
+        </div>
+    </header>
+    <div id="cartMenu" class="cart-menu">
+        <div class="cart-header">
+            <span class="carritoslogan">Domicilio</span>
+            <span id="closeBtn" class="close-btn">&times;</span>
+        </div>
+        <div id="cartItems" class="cart-items">
+            <div id="emptyCartMessage" style="display: none;">El envio esta vacio!</div>
+        </div>
+        <div class="totalandpedido">
+            <button class="pedido" id="pedido">Comprar</button>
+            <div id="totalContainer"></div>
+        </div>
+        
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#entrantes">Entrantes</a></li>
+            <li><a href="#bebidas">Bebidas</a></li>
+            <li><a href="#hamburguesas">Hamburguesas</a></li>
+            <li><a href="#pastas">Pastas</a></li>
+            <li><a href="#postres">Postres</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="entrantes" class="menu-section">
+            <h2>Entrantes</h2>
+            <div class="item">
+                <img src="Platos/crema.webp" alt="Crema de queso">
+                <div class="item-details">
+                    <h3>Crema de queso</h3>
+                    <p>Precio: $10</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/tostones.webp" alt="Tostones rellenos">
+                <div class="item-details">
+                    <h3>Tostones rellenos</h3>
+                    <p>Precio: $10</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/mariposas.webp" alt="Mariposas chinas">
+                <div class="item-details">
+                    <h3>Maripositas chinas</h3>
+                    <p>Precio: $10</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/croquetas.webp" alt="Croquetas">
+                <div class="item-details">
+                    <h3>Croquetas</h3>
+                    <p>Precio: $10</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/papitas.webp" alt="Papas Fritas">
+                <div class="item-details">
+                    <h3>Papas fritas</h3>
+                    <p>Precio: $10</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/huevos.webp" alt="Huevos rotos con tocino">
+                <div class="item-details">
+                    <h3>Huevos rotos con tocino</h3>
+                    <p>Precio: $10</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 id="bebidas">Bebidas</h2>
+            <div class="item">
+                <img src="Platos/bebidas.webp" alt="Cocteles">
+                <div class="item-details">
+                    <h3>Cocteles</h3>
+                    <p>Precio: $5</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/redbull.webp" alt="Redbull">
+                <div class="item-details">
+                    <h3>Redbull</h3>
+                    <p>Precio: $5</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/cafe.webp" alt="Cafe">
+                <div class="item-details">
+                    <h3>Cafe</h3>
+                    <p>Precio: $5</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/batidohelado.webp" alt="batido de helado">
+                <div class="item-details">
+                    <h3>Batido de helado</h3>
+                    <p>Precio: $5</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/agua.webp" alt="Agua">
+                <div class="item-details">
+                    <h3>Agua natural</h3>
+                    <p>Precio: $5</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/cerveza.webp" alt="Cerveza">
+                <div class="item-details">
+                    <h3>Cerveza</h3>
+                    <p>Precio: $5</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/limonada.webp" alt="Limonada">
+                <div class="item-details">
+                    <h3>Limonada</h3>
+                    <p>Precio: $5</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+        </section>
+
+        <section class="menu-section">
+            <h2 id="hamburguesas">Hamburguesas</h2>
+            <div class="item">
+                <img src="Platos/cheeseburguer.webp" alt="CheeseBurguer">
+                <div class="item-details">
+                    <h3>CheeseBurguer</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/americanburguer.webp" alt="Americana">
+                <div class="item-details">
+                    <h3>Hamburguesa americana</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/hambuguesadepollo.webp" alt="ChickenBurguer">
+                <div class="item-details">
+                    <h3>Hamburguesa de pollo</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <section class="menu-section">
+            <h2 id="pastas">Pastas</h2>
+            <div class="item">
+                <img src="Platos/spaguetisnap.webp" alt="Spaguetis napolitanos">
+                <div class="item-details">
+                    <h3>Spaguetis napolitano</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/salsablanca.webp" alt="Spaguetis con salsa blanca">
+                <div class="item-details">
+                    <h3>Spaguetis con salsa blanca</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/carbonara.webp" alt="Carbonara">
+                <div class="item-details">
+                    <h3>Spaguetis a la carbonara</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">                              
+                        <button  class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="menu-section">
+            <h2 id="postres">Postres</h2>
+            <div class="item">
+                <img src="Platos/tartachocolate.webp" alt="tarta">
+                <div class="item-details">
+                    <h3>Tarta de chocolate</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/cono.webp" alt="Cono de helado">
+                <div class="item-details">
+                    <h3>Cono de helado</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="Platos/cheesecake.webp" alt="cheesecake">
+                <div class="item-details">
+                    <h3>CheeseCake</h3>
+                    <p>Precio: $12</p>
+                    <div class="add-to-cart-btn-container">
+                        <button class="add-to-cart-btn">Añadir a pedido</button>
+                        <button class="quantity-btn-less">-</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>Dirección: [Dirección del restaurante]</p>
+            <p>© Restaurante</p>
+        </div>
+    </footer>
+    <div id="scrollToTopBtn"></div>
+    <script src="backend.js"></script>
+</body>
+</html>
