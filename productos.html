@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio - Bombones deliciosos</title>
+    <link rel="stylesheet" href="style-productos.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <nav class="menu">
+        <ul>
+            <li><a href="Index.html">Inicio</a></li>
+            <li><a class="active" href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+
+   <!-- Contenido de la página de productos -->
+   <div class="contenedor">
+    <div class="producto">
+        <div class="imagen">
+            <img src="bomb.png" alt="Bombón 1">
+        </div>
+        <div class="detalles">
+            <h2>Bombones simples</h2>
+            <p class="descripcion">Set de 5 bombones: 100.00 CUP</p>
+            <button class="botonMenos">-</button>
+            <span class="cantidad" id="Set_de_5_bombones_simples">0</span>
+            <button class="botonMas">+</button>
+            <p class="descripcion">Set de 12 bombones: 250.00 CUP</p>
+            <button class="botonMenos">-</button>
+            <span class="cantidad" id="Set_de_12_bombones_simples">0</span>
+            <button class="botonMas">+</button>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="imagen">
+            <img src="bombrell.png" alt="Bombón 3">
+        </div>
+        <div class="detalles">
+            <h2>Bombones Rellenos</h2>
+            <p class="descripcion">Set de 5 bombones: 150.00 CUP</p>
+            <button class="botonMenos">-</button>
+            <span class="cantidad" id="Set_de_5_bombones_rellenos">0</span>
+            <button class="botonMas">+</button>
+            <p class="descripcion">Set de 12 bombones: 350.00 CUP</p>
+            <button class="botonMenos">-</button>
+            <span class="cantidad" id="Set_de_12_bombones_rellenos">0</span>
+            <button class="botonMas">+</button>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="imagen">
+            <img src="mini-removebg-preview.png" alt="Bombón 2">
+        </div>
+        <div class="detalles">
+            <h2>Mini bombones</h2>
+            <p class="descripcion">Set de 8 bombones: 100.00 CUP</p>
+            <button class="botonMenos">-</button>
+            <span class="cantidad" id="Set_de_8_minibombones">0</span>
+            <button class="botonMas">+</button>
+        </div>
+    </div>
+    <div class="producto">
+        <div class="imagen">
+            <img src="mixtos-removebg-preview.png" alt="Bombón 2">
+        </div>
+        <div class="detalles">
+            <h2>Bombones mixtos</h2>
+            <p class="descripcion">Set de 20 bombones rellenos + 20 bombones simples:</p>
+            <p class="descripcion">1000.00 CUP</p>
+            <button class="botonMenos">-</button>
+            <span class="cantidad" id="Set_de_20_bombondes_de_cada_uno">0</span>
+            <button class="botonMas">+</button>
+        </div>
+    </div>
+    <!-- Puedes agregar más productos siguiendo la misma estructura -->
+</div>
+<button id="botonCompra">Comprar</button>
+<script src="compra.js"></script>
+</body>
+</html>

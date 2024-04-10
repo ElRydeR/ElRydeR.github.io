@@ -1,0 +1,113 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('fondo-plano-dia-mundial-chocolate-dulces-chocolate_23-2149430827.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.menu {
+  text-align: center;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #6f4e37; /* Nuevo color de fondo al pasar el cursor */
+    color: #fff; /* Nuevo color de texto al pasar el cursor */
+    border-radius: 2px;
+}
+
+.menu ul li a.active {
+  border-bottom: 3px solid #6f4e37; /* Subrayado más grueso y color piel */
+}
+
+/* Estilos para el contenedor de la página de contacto */
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Estilos para el enunciado */
+.enunciado {
+    text-align: center; /* Centra el texto horizontalmente */
+    margin-bottom: 20px;
+}
+
+.enunciado h2 {
+    font-size: 28px;
+}
+
+.enunciado p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Estilos para los logos */
+.logos {
+    text-align: center; /* Centra los logos horizontalmente */
+}
+
+.logos a {
+    display: block; /* Para que los logos estén en línea */
+    margin-bottom: 30px;
+    cursor: default;
+}
+
+.logos img:active {
+    animation: pulse 0.3s ease;
+}
+
+.logos img {
+    max-width: 100px; /* Tamaño máximo de los logos */
+    height: auto;
+    margin: 0 auto; /* Centra horizontalmente los logos */
+    cursor: pointer;
+}
+
+/* Media query para ajustar el tamaño de las letras y los logos en pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .enunciado h2 {
+        font-size: 21px; /* Reducción del tamaño de la fuente en un 25% */
+    }
+
+    .enunciado p {
+        font-size: 14px; /* Reducción del tamaño de la fuente en un 25% */
+    }
+
+    .logos img {
+        max-width: 80px;
+    }
+
+    .logos a {
+        margin-bottom: 40px;
+    }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }

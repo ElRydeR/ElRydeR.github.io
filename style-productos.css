@@ -1,0 +1,161 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('fondo-plano-dia-mundial-chocolate-dulces-chocolate_23-2149430827.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.menu {
+  text-align: center;
+  background-color: transparent;
+  padding: 10px 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+.menu li a:hover {
+    background-color: #6f4e37; /* Nuevo color de fondo al pasar el cursor */
+    color: #fff; /* Nuevo color de texto al pasar el cursor */
+    border-radius: 2px;
+}
+
+.menu ul li a.active {
+  border-bottom: 3px solid #6f4e37; /* Subrayado más grueso y color piel */
+}
+
+/* Estilos para el contenedor de productos */
+.contenedor {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 10px;
+}
+
+/* Estilos para cada producto */
+.producto {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la imagen del producto */
+.imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente la imagen */
+    align-items: center; /* Centra verticalmente la imagen */
+}
+
+.imagen img {
+    max-width: 100%;
+    max-height: 200px; /* Tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Estilos para los detalles del producto */
+.detalles {
+    flex: 1;
+}
+
+.detalles h2 {
+    font-size: 24px;
+    margin-top: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.precio {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.descripcion {
+    margin-top: 10px;
+}
+
+#botonCompra {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ab714b;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#botonCompra:hover {
+    background-color: #bf7d54;
+}
+
+
+.botonMas,
+.botonMenos {
+    background-color: #ab714b;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.botonMas {
+    background-color: rgb(36, 109, 36);
+}
+
+.botonMenos {
+    margin-left: 70px;
+    background-color: rgb(88, 26, 26);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+span {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Media query para ajustar el tamaño de las letras y los logos en pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+
+    .detalles h2 {
+        font-size: 18px;
+    }
+
+    .precio {
+        font-size: 14px;
+    }
+
+    .descripcion {
+        font-size: 14px;
+    }
+
+    .imagen img {
+        max-width: 70%;
+    }
+}
